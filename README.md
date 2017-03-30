@@ -1,2 +1,1 @@
-# inettech
-Praktikum Internettechnologien Sem.4
+inettech
