@@ -6,6 +6,7 @@
     <!-- CSS Here -->
     <link rel="stylesheet" href="/assets/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="/assets/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
   </head>
   <body>
     <nav class="navbar navbar-default">
@@ -30,6 +31,8 @@
                 Kategorien <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
+                <li><a href="/">Bestseller</a></li>
+                <li class="divider"></li>
                 <li><a href="#">Krimis</a></li>
                 <li><a href="#">Roman</a></li>
                 <li><a href="#">Horror</a></li>
@@ -41,7 +44,7 @@
           <ul class="nav navbar-nav navbar-right">
             <form class="navbar-form navbar-left">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Suche...">
+                <input type="text" class="form-control" placeholder="Suchen...">
               </div>
             </form>
             <li class="dropdown">
@@ -53,7 +56,7 @@
                 <table class="table table-condensed">
                   <thead>
                     <tr>
-                      <th>Anzahl</th>
+                      <th style="text-align: right;">Anzahl</th>
                       <th>Beschreibung</th>
                       <th>Einzelpreis</th>
                     </tr>
@@ -97,12 +100,20 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-3">
-          <div class="list-group">
-            <a href="/krimis" class="list-group-item active">Krimis</a>
-            <a href="/horror" class="list-group-item">Horror</a>
-            <a href="/roman" class="list-group-item">Roman</a>
-            <a href="/fantasy" class="list-group-item">Fantasy</a>
-            <a href="/sachbuecher" class="list-group-item">Sachbücher</a>
+          <div class="displayflex">
+            <div class="list-group flex1">
+              <a href="/" class="list-group-item active">Bestseller</a>
+              <a href="/krimis" class="list-group-item">Krimis</a>
+              <a href="/horror" class="list-group-item">Horror</a>
+              <a href="/roman" class="list-group-item">Roman</a>
+              <a href="/fantasy" class="list-group-item">Fantasy</a>
+              <a href="/sachbuecher" class="list-group-item">Sachbücher</a>
+            </div>
+            <div class="flexBottom">
+              <a href="/impressum">Impressum</a>
+              <a href="/impressum">AGB</a>
+              <a href="/impressum">Kontakt</a>
+            </div>
           </div>
         </div>
         <div class="col-md-9">
@@ -111,7 +122,7 @@
               <div class="thumbnail">
                 <img src="//source.unsplash.com/random" alt="Thumbnail">
                 <div class="caption">
-                  <h3>Harry Pooter 1</h3>
+                  <h3 class="oneliner">Harry Pooter 1 und der Stein der Weisen</h3>
                   <div style="padding-bottom: .5em;">
                     <span class="label label-success">Neu</span>
                     <span class="label label-info">Success</span>
@@ -133,7 +144,7 @@
               <div class="thumbnail">
                 <img src="//source.unsplash.com/random" alt="Thumbnail">
                 <div class="caption">
-                  <h3>Harry Pooter 1</h3>
+                  <h3 class="oneliner">Harry Pooter 1</h3>
                   <div style="padding-bottom: .5em;">
                     <span class="label label-success">Neu</span>
                     <span class="label label-info">Success</span>
@@ -156,7 +167,7 @@
               <div class="thumbnail">
                 <img src="//source.unsplash.com/random" alt="Thumbnail">
                 <div class="caption">
-                  <h3>Harry Pooter 1</h3>
+                  <h3 class="oneliner">Harry Pooter 1</h3>
                   <div style="padding-bottom: .5em;">
                     <span class="label label-success">Neu</span>
                     <span class="label label-info">Success</span>
@@ -179,7 +190,7 @@
               <div class="thumbnail">
                 <img src="//source.unsplash.com/random" alt="Thumbnail">
                 <div class="caption">
-                  <h3>Harry Pooter 1</h3>
+                  <h3 class="oneliner">Harry Pooter 1</h3>
                   <div style="padding-bottom: .5em;">
                     <span class="label label-success">Neu</span>
                     <span class="label label-info">Success</span>
@@ -202,7 +213,7 @@
               <div class="thumbnail">
                 <img src="//source.unsplash.com/random" alt="Thumbnail">
                 <div class="caption">
-                  <h3>Harry Pooter 1</h3>
+                  <h3 class="oneliner">Harry Pooter 1</h3>
                   <div style="padding-bottom: .5em;">
                     <span class="label label-success">Neu</span>
                     <span class="label label-info">Success</span>
@@ -224,7 +235,7 @@
               <div class="thumbnail">
                 <img src="//source.unsplash.com/random" alt="Thumbnail">
                 <div class="caption">
-                  <h3>Harry Pooter 1</h3>
+                  <h3 class="oneliner">Harry Pooter 1</h3>
                   <div style="padding-bottom: .5em;">
                     <span class="label label-success">Neu</span>
                     <span class="label label-info">Success</span>
@@ -251,5 +262,6 @@
     <!-- JS Here -->
     <script src="/assets/js/vendor/jquery-3.2.0.min.js" charset="utf-8"></script>
     <script src="/assets/js/vendor/bootstrap.min.js" charset="utf-8"></script>
+    <script src="/assets/js/index.js" charset="utf-8"></script>
   </body>
 </html>

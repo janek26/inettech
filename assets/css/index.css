@@ -1,0 +1,16 @@
+.oneliner {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.displayflex {
+  display: flex;
+  flex-direction: column;
+}
+.flex1 {
+  height: calc(100vh - 150px);
+}
+.flexBottom{
+  display: flex;
+  justify-content: space-around;
+}
