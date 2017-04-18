@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title>Bücher Shop</title>
     <!-- CSS Here -->
-    <link rel="stylesheet" href="../assets/css/vendor/bootstrap.css">
-    <link rel="stylesheet" href="../assets/fa/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/vendor/bootstrap.css">
+    <link rel="stylesheet" href="/assets/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
   </head>
   <body>
     <nav class="navbar navbar-default">
@@ -110,24 +110,37 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-3">
-          <div class="displayflex">
-            <div class="list-group flex1">
-              <a href="/" class="list-group-item active">Bestseller</a>
-              <a href="/krimis" class="list-group-item">Krimis</a>
-              <a href="/horror" class="list-group-item">Horror</a>
-              <a href="/roman" class="list-group-item">Roman</a>
-              <a href="/fantasy" class="list-group-item">Fantasy</a>
-              <a href="/sachbuecher" class="list-group-item">Sachbücher</a>
-            </div>
-            <div class="flexBottom">
-              <a href="/impressum">Impressum</a>
-              <a href="/impressum">AGB</a>
-              <a href="/impressum">Kontakt</a>
-            </div>
+          <div class="thumbnail">
+            <a href="/details">
+              <img  src="/assets/img/1.jpg" alt="Thumbnail">
+            </a>
+
           </div>
         </div>
+
         <div class="col-md-9">
-          <div class="row" style="height: calc(100vh - 83px); overflow-y: auto; overflow-x: hidden;">
+          <div class="row">
+            <div class="col-md-8">
+              <a href="/details">            J.K. Rowling     </a>
+              <h3 class="oneliner">Harry Pooter 1 und der Stein der Weisen</h3>
+              <div id="stars-existing" class="starrr" data-rating='4'></div>
+       <span id="count-existing">4</span> von 5 Sternen
+</div>
+</div>
+       <div class="row">
+
+         <div class="bd-example" data-example-id="">
+ <a href="#ebook" class="btn btn-outline-info">Ebook</a>
+
+<a href="#ebook" class="btn btn-outline-info">Taschenbuch</an>
+   <a href="#ebook" class="btn btn-outline-info">Hörbuch</a>
+ </div>
+       </div>
+            </div>
+            <div class="col-md-4">
+            </div>
+
+
             <div class="col-sm-6 col-md-4">
               <div class="thumbnail">
                 <a href="/details">
@@ -282,8 +295,9 @@
       </div>
     </div>
     <!-- JS Here -->
-    <script src="assets/js/vendor/jquery-3.2.0.min.js" charset="utf-8"></script>
-    <script src="assets/js/vendor/bootstrap.min.js" charset="utf-8"></script>
-    <script src="assets/js/index.js" charset="utf-8"></script>
+    <script src="/assets/js/vendor/jquery-3.2.0.min.js" charset="utf-8"></script>
+    <script src="/assets/js/vendor/bootstrap.min.js" charset="utf-8"></script>
+    <script src="/assets/js/vendor/star.js?id=1" charset="utf-8"></script>
+    <script src="/assets/js/index.js" charset="utf-8"></script>
   </body>
 </html>
