@@ -116,7 +116,7 @@
                         Checkout
                     </h2>
                     <hr/>
-                    <a href="/index.html" class="btn btn-info" style="width: 100%;">Zurück zum Shop</a>
+                    <a href="/" class="btn btn-info" style="width: 100%;">Zurück zum Shop</a>
                     <hr/>
                     <div class="shopping_cart">
                         <form class="form-horizontal" role="form" action="" method="post" id="payment-form">
@@ -134,9 +134,6 @@
                                                     <table class="table table-striped">
                                                         <tr>
                                                             <td colspan="2">
-                                                                <a class="btn btn-warning btn-sm pull-right"
-                                                                   href="http://www.startajobboard.com/"
-                                                                   title="Remove Item">X</a>
                                                                 <b>
                                                                     Ihre Bestellung</b></td>
                                                         </tr>
@@ -163,112 +160,102 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div style="text-align: center; width:100%;"><a style="width:100%;"
+                                                                                            data-toggle="collapse"
+                                                                                            data-parent="#accordion"
+                                                                                            href="#collapseTwo"
+                                                                                            class=" btn btn-success"
+                                                                                            onclick="$(this.parent).fadeOut(); $('#payInfo').fadeIn();">Kontaktinformationen eintragen</a></div>
                                         </div>
                                     </div>
 
                                 </div>
                             </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <div style="text-align: center; width:100%;"><a style="width:100%;"
-                                                                                        data-toggle="collapse"
-                                                                                        data-parent="#accordion"
-                                                                                        href="#collapseTwo"
-                                                                                        class=" btn btn-success"
-                                                                                        onclick="$(this).fadeOut(); $('#payInfo').fadeIn();">Zahlungsinformationen eintragen</a></div>
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Ihre Kontaktdaten</a>
-                                    </h4>
-                                </div>
-                                <div id="collapseTwo" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <b>Bitte geben Sie ihre Adresse ein</b>
-                                        <br/><br/>
-                                        <table class="table table-striped" style="font-weight: bold;">
-                                            <tr>
-                                                <td style="width: 175px;">
-                                                    <label for="id_email">Email-Adresse:</label></td>
-                                                <td>
-                                                    <input class="form-control" id="id_email" name="email"
-                                                           required="required" type="text"/>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 175px;">
-                                                    <label for="id_first_name">Vorname:</label></td>
-                                                <td>
-                                                    <input class="form-control" id="id_first_name" name="first_name"
-                                                           required="required" type="text"/>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 175px;">
-                                                    <label for="id_last_name">Nachname:</label></td>
-                                                <td>
-                                                    <input class="form-control" id="id_last_name" name="last_name"
-                                                           required="required" type="text"/>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 175px;">
-                                                    <label for="id_address_line_1">Addresse:</label></td>
-                                                <td>
-                                                    <input class="form-control" id="id_address_line_1"
-                                                           name="address_line_1" required="required" type="text"/>
-                                                </td>
-                                            </tr>
-                                           <tr>
-                                                <td style="width: 175px;">
-                                                    <label for="id_city">Stadt:</label></td>
-                                                <td>
-                                                    <input class="form-control" id="id_city" name="city"
-                                                           required="required" type="text"/>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 175px;">
-                                                    <label for="id_postalcode">Postleitzahl:</label></td>
-                                                <td>
-                                                    <input class="form-control" id="id_postalcode" name="postalcode"
-                                                           required="required" type="text"/>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 175px;">
-                                                    <label for="id_phone">Telefonnummer:</label></td>
-                                                <td>
-                                                    <input class="form-control" id="id_phone" name="phone" type="text"/>
-                                                </td>
-                                            </tr>
+                            <div class="panel-group" id="accordion2">
+                              <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                          <a data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">Ihre Kontaktdaten</a>
+                                      </h4>
+                                  </div>
+                                  <div id="collapseTwo" class="panel-collapse collapse">
+                                      <div class="panel-body">
+                                          <b>Bitte geben Sie ihre Adresse ein</b>
+                                          <br/><br/>
+                                          <table class="table table-striped" style="font-weight: bold;">
+                                              <tr>
+                                                  <td style="width: 175px;">
+                                                      <label for="id_email">Email-Adresse:</label></td>
+                                                  <td>
+                                                      <input class="form-control" id="id_email" name="email"
+                                                             required="required" type="text"/>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td style="width: 175px;">
+                                                      <label for="id_first_name">Vorname:</label></td>
+                                                  <td>
+                                                      <input class="form-control" id="id_first_name" name="first_name"
+                                                             required="required" type="text"/>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td style="width: 175px;">
+                                                      <label for="id_last_name">Nachname:</label></td>
+                                                  <td>
+                                                      <input class="form-control" id="id_last_name" name="last_name"
+                                                             required="required" type="text"/>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td style="width: 175px;">
+                                                      <label for="id_address_line_1">Addresse:</label></td>
+                                                  <td>
+                                                      <input class="form-control" id="id_address_line_1"
+                                                             name="address_line_1" required="required" type="text"/>
+                                                  </td>
+                                              </tr>
+                                             <tr>
+                                                  <td style="width: 175px;">
+                                                      <label for="id_city">Stadt:</label></td>
+                                                  <td>
+                                                      <input class="form-control" id="id_city" name="city"
+                                                             required="required" type="text"/>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td style="width: 175px;">
+                                                      <label for="id_postalcode">Postleitzahl:</label></td>
+                                                  <td>
+                                                      <input class="form-control" id="id_postalcode" name="postalcode"
+                                                             required="required" type="text"/>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td style="width: 175px;">
+                                                      <label for="id_phone">Telefonnummer:</label></td>
+                                                  <td>
+                                                      <input class="form-control" id="id_phone" name="phone" type="text"/>
+                                                  </td>
+                                              </tr>
 
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <div style="text-align: center;"><a data-toggle="collapse"
-                                                                            data-parent="#accordion"
-                                                                            href="#collapseThree"
-                                                                            class=" btn   btn-success" id="payInfo"
-                                                                            style="width:100%;display: none;" onclick="$(this).fadeOut();
-                   document.getElementById('collapseThree').scrollIntoView()">Zu den Zahlungsdaten:</a>
-                                        </div>
-                                    </h4>
-                                </div>
+                                          </table>
+                                          <div style="text-align: center;"><a data-toggle="collapse"
+                                                                              data-parent="#accordion2"
+                                                                              href="#collapseThree"
+                                                                              class=" btn   btn-success" id="payInfo"
+                                                                              style="width:100%;display: none;" onclick="$(this.parent).fadeOut();
+                     document.getElementById('collapseThree').scrollIntoView()">Zu den Zahlungsdaten</a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
                             </div>
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                                            <b>Zahlungsdaten:</b>
+                                            <b>Zahlungsdaten</b>
                                         </a>
                                     </h4>
                                 </div>
