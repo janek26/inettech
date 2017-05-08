@@ -118,6 +118,7 @@
             <th style="text-align: right;">Anzahl</th>
             <th>Beschreibung</th>
             <th>Einzelpreis</th>
+            <th>Gesamtpreis</th>
             <th></th>
           </tr>
         </thead>
@@ -136,6 +137,7 @@
             </td>
             <td>Harry Potter Band 1</td>
             <td>12€</td>
+            <td>12€</td>
             <td><a href="#del" class="btn btn-primary">X</a></td>
           </tr>
           <tr>
@@ -152,20 +154,6 @@
             </td>
             <td>Harry Potter Band 1</td>
             <td>12€</td>
-            <td><a href="#del" class="btn btn-primary">X</a></td>
-          </tr><tr>
-            <td class="pull-right">
-              <div class="input-group" style="width: 112px">
-                <span class="input-group-btn">
-                  <button class="btn btn-secondary" onclick="if((parseInt($('#dbidAmount').attr('value')))>1) $('#dbidAmount').attr('value', parseInt($('#dbidAmount').attr('value')) -1)" type="button">-</button>
-                </span>
-                <input id="dbidAmount" style="width: 50px" type="text" class="form-control" aria-label="Amount" value="1" />
-                <span class="input-group-btn">
-                  <button class="btn btn-secondary" onclick="$('#dbidAmount').attr('value', parseInt($('#dbidAmount').attr('value')) +1)" type="button">+</button>
-                </span>
-              </div>
-            </td>
-            <td>Harry Potter Band 1</td>
             <td>12€</td>
             <td><a href="#del" class="btn btn-primary">X</a></td>
           </tr><tr>
@@ -181,6 +169,23 @@
               </div>
             </td>
             <td>Harry Potter Band 1</td>
+            <td>12€</td>
+            <td>12€</td>
+            <td><a href="#del" class="btn btn-primary">X</a></td>
+          </tr><tr>
+            <td class="pull-right">
+              <div class="input-group" style="width: 112px">
+                <span class="input-group-btn">
+                  <button class="btn btn-secondary" onclick="if((parseInt($('#dbidAmount').attr('value')))>1) $('#dbidAmount').attr('value', parseInt($('#dbidAmount').attr('value')) -1)" type="button">-</button>
+                </span>
+                <input id="dbidAmount" style="width: 50px" type="text" class="form-control" aria-label="Amount" value="1" />
+                <span class="input-group-btn">
+                  <button class="btn btn-secondary" onclick="$('#dbidAmount').attr('value', parseInt($('#dbidAmount').attr('value')) +1)" type="button">+</button>
+                </span>
+              </div>
+            </td>
+            <td>Harry Potter Band 1</td>
+            <td>12€</td>
             <td>12€</td>
             <td><a href="#del" class="btn btn-primary">X</a></td>
           </tr>
@@ -188,8 +193,10 @@
         <tfoot>
           <tr>
             <td></td>
+            <td></td>
             <th>Gesamt:</th>
             <th><b>70€</b></th>
+            <td></td>
           </tr>
         </tfoot>
       </table>
